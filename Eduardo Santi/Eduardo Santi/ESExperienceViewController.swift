@@ -13,20 +13,15 @@ class ESExperienceViewController: UIViewController, UITableViewDataSource, UITab
     @IBOutlet weak var myPhoto: UIImageView!
     @IBOutlet weak var labelMyName: UILabel!
     @IBOutlet weak var labelAboutMe: UILabel!
+    var experience: ESExperience = ESExperience()
     
-    
-    var works = ["iOS Developer Student - BEPiD", "Web Developer - Agência Conjunto"]
-    var dates = ["Feb 2015 - Present", "Oct 2014 - Feb 2015"]
-    var descriptions = ["Um programa único e inovador para qualificar estudantes de graduação. A abordagem de aprendizagem é baseada em desafios, onde os estudantes interagem com outros alunos e professores para superar os desafios", "Criação de websites para campanhas institucionais, promocionais, comerciais e blogs para divulgação de notícias e eventos dos clientes"]
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor(red: 31/255, green: 131/255, blue: 192/255, alpha: 1.0)
-        setValueImage()
-        setValueLabelMyName()
-        setValueLabelAboutMe()
+        //setValueImage()
+        //setValueLabelMyName()
+        //setValueLabelAboutMe()
     }
     
     func setValueImage(){
@@ -58,15 +53,15 @@ class ESExperienceViewController: UIViewController, UITableViewDataSource, UITab
         tableView.allowsSelection = false
         
         var textWork = cell.viewWithTag(10) as! UILabel
-        textWork.text = self.works[indexPath.row]
+        textWork.text = self.experience.works[indexPath.row]
         textWork.textColor = UIColor.whiteColor()
         
         var textDate = cell.viewWithTag(20) as! UILabel
-        textDate.text = self.dates[indexPath.row]
+        textDate.text = self.experience.dates[indexPath.row]
         textDate.textColor = UIColor.whiteColor()
         
         var textDescription = cell.viewWithTag(30) as! UITextView
-        textDescription.text = self.descriptions[indexPath.row]
+        textDescription.text = self.experience.descriptions[indexPath.row]
         textDescription.textColor = UIColor.whiteColor()
         textDescription.backgroundColor = UIColor(red: 31/255, green: 131/255, blue: 192/255, alpha: 1.0)
         textDescription.editable = false
@@ -77,7 +72,7 @@ class ESExperienceViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.works.count;
+        return self.experience.works.count
     }
     
 }

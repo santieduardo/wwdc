@@ -14,6 +14,7 @@ class ESAboutMeViewController: UIViewController {
     @IBOutlet weak var labelMyName: UILabel!
     @IBOutlet weak var labelAboutMe: UILabel!
     @IBOutlet weak var textViewMyInterests: UITextView!
+    var aboutMe: ESAboutMe = ESAboutMe()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,12 +37,12 @@ class ESAboutMeViewController: UIViewController {
     }
     
     func setValueLabelMyName(){
-        self.labelMyName.text = "Eduardo Santi"
+        self.labelMyName.text = self.aboutMe.name
         self.labelMyName.textColor = UIColor.whiteColor()
     }
     
     func setValueLabelAboutMe(){
-        self.labelAboutMe.text = "BEPiD and Analysis and Systems Development Student"
+        self.labelAboutMe.text = self.aboutMe.information
         self.labelAboutMe.textColor = UIColor.whiteColor()
     }
     
@@ -50,6 +51,6 @@ class ESAboutMeViewController: UIViewController {
         self.textViewMyInterests.backgroundColor = UIColor.clearColor()
         self.textViewMyInterests.textColor = UIColor.whiteColor()
         self.textViewMyInterests.selectable = false
-        self.textViewMyInterests.text = "Meus interesses são desenvolvimento mobile na plataforma iOS e Mac OS X, integração dentre devices, desenvolvimento ágil, gerência de projetos e sistemas distribuídos"
+        self.textViewMyInterests.text = self.aboutMe.interests
     }    
 }

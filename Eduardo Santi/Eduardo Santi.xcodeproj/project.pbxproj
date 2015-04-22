@@ -15,6 +15,9 @@
 		A084B6AB1AE5927700D2D022 /* Eduardo_SantiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A084B6AA1AE5927700D2D022 /* Eduardo_SantiTests.swift */; };
 		A087AF9E1AE74452009538B3 /* ESPortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A087AF9D1AE74452009538B3 /* ESPortfolioViewController.swift */; };
 		A0B6911A1AE7233A006F3F1B /* ESExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B691191AE7233A006F3F1B /* ESExperienceViewController.swift */; };
+		A0DCF4901AE8219400259A8B /* ESAboutMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DCF48F1AE8219400259A8B /* ESAboutMe.swift */; };
+		A0DCF4921AE824BA00259A8B /* ESExperience.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DCF4911AE824BA00259A8B /* ESExperience.swift */; };
+		A0DCF4941AE8269500259A8B /* ESPortfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DCF4931AE8269500259A8B /* ESPortfolio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		A084B6AA1AE5927700D2D022 /* Eduardo_SantiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eduardo_SantiTests.swift; sourceTree = "<group>"; };
 		A087AF9D1AE74452009538B3 /* ESPortfolioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESPortfolioViewController.swift; sourceTree = "<group>"; };
 		A0B691191AE7233A006F3F1B /* ESExperienceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESExperienceViewController.swift; sourceTree = "<group>"; };
+		A0DCF48F1AE8219400259A8B /* ESAboutMe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESAboutMe.swift; sourceTree = "<group>"; };
+		A0DCF4911AE824BA00259A8B /* ESExperience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESExperience.swift; sourceTree = "<group>"; };
+		A0DCF4931AE8269500259A8B /* ESPortfolio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESPortfolio.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,7 @@
 			children = (
 				A04649661AE60B1300D97A82 /* assets */,
 				A04649651AE60ABC00D97A82 /* classes */,
+				A0DCF48E1AE8216A00259A8B /* model */,
 				A04649641AE60A9A00D97A82 /* view */,
 				A084B6921AE5927600D2D022 /* Supporting Files */,
 			);
@@ -140,6 +147,16 @@
 				A084B6A91AE5927700D2D022 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A0DCF48E1AE8216A00259A8B /* model */ = {
+			isa = PBXGroup;
+			children = (
+				A0DCF48F1AE8219400259A8B /* ESAboutMe.swift */,
+				A0DCF4911AE824BA00259A8B /* ESExperience.swift */,
+				A0DCF4931AE8269500259A8B /* ESPortfolio.swift */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,8 +260,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0DCF4941AE8269500259A8B /* ESPortfolio.swift in Sources */,
 				A084B6971AE5927600D2D022 /* ESAboutMeViewController.swift in Sources */,
+				A0DCF4901AE8219400259A8B /* ESAboutMe.swift in Sources */,
 				A087AF9E1AE74452009538B3 /* ESPortfolioViewController.swift in Sources */,
+				A0DCF4921AE824BA00259A8B /* ESExperience.swift in Sources */,
 				A0B6911A1AE7233A006F3F1B /* ESExperienceViewController.swift in Sources */,
 				A084B6951AE5927600D2D022 /* AppDelegate.swift in Sources */,
 			);

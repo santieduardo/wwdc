@@ -52,5 +52,5 @@ class ESAboutMeViewController: UIViewController {
         self.textViewMyInterests.textColor = UIColor.whiteColor()
         self.textViewMyInterests.selectable = false
         self.textViewMyInterests.text = self.aboutMe.interests
-    }    
+    }
 }

@@ -43,6 +43,14 @@ class ESPortfolioViewController: UIViewController, UITableViewDataSource, UITabl
         self.labelAboutMe.textColor = UIColor.whiteColor()
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
+        
+        var textURL = cell.viewWithTag(30) as! UILabel
+        var url = textURL.text
+        UIApplication.sharedApplication().openURL(NSURL(string: url!)!)
+    }
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
         
@@ -51,7 +59,8 @@ class ESPortfolioViewController: UIViewController, UITableViewDataSource, UITabl
         tableView.backgroundColor = UIColor(red: 109/255, green: 2/255, blue: 175/255, alpha: 1.0)
         tableView.tableFooterView = UIView(frame: CGRectZero)
         tableView.separatorColor = UIColor.clearColor()
-        tableView.allowsSelection = false
+        //tableView.allowsSelection = false
+        
         
         var textProject = cell.viewWithTag(10) as! UILabel
         textProject.text = self.portfolio.projects[indexPath.row]

@@ -19,27 +19,6 @@ class ESExperienceViewController: UIViewController, UITableViewDataSource, UITab
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor(red: 31/255, green: 131/255, blue: 192/255, alpha: 1.0)
-        //setValueImage()
-        //setValueLabelMyName()
-        //setValueLabelAboutMe()
-    }
-    
-    func setValueImage(){
-        myPhoto.layer.borderWidth = 1.0
-        myPhoto.layer.masksToBounds = false
-        myPhoto.layer.borderColor = UIColor.whiteColor().CGColor
-        myPhoto.layer.cornerRadius = myPhoto.frame.size.height/2
-        myPhoto.clipsToBounds = true
-    }
-    
-    func setValueLabelMyName(){
-        self.labelMyName.text = "Eduardo Santi"
-        self.labelMyName.textColor = UIColor.whiteColor()
-    }
-    
-    func setValueLabelAboutMe(){
-        self.labelAboutMe.text = "BEPiD and Analysis and Systems Development Student"
-        self.labelAboutMe.textColor = UIColor.whiteColor()
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

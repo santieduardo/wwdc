@@ -27,7 +27,6 @@ class ESExperienceViewController: UIViewController, UITableViewDataSource, UITab
         setValueImage()
         setValueLabelMyName()
         setValueLabelAboutMe()
-        setValueTabBarItem()
     }
     
     func setValueImage(){
@@ -46,10 +45,6 @@ class ESExperienceViewController: UIViewController, UITableViewDataSource, UITab
     func setValueLabelAboutMe(){
         self.labelAboutMe.text = "BEPiD and Analysis and Systems Development Student"
         self.labelAboutMe.textColor = UIColor.whiteColor()
-    }
-    
-    func setValueTabBarItem(){
-        self.tabBarItem.title = "Experience"
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

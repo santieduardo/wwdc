@@ -26,7 +26,6 @@ class ESPortfolioViewController: UIViewController, UITableViewDataSource, UITabl
         setValueImage()
         setValueLabelMyName()
         setValueLabelAboutMe()
-        setValueTabBarItem()
     }
     
     func setValueImage(){
@@ -45,10 +44,6 @@ class ESPortfolioViewController: UIViewController, UITableViewDataSource, UITabl
     func setValueLabelAboutMe(){
         self.labelAboutMe.text = "BEPiD and Analysis and Systems Development Student"
         self.labelAboutMe.textColor = UIColor.whiteColor()
-    }
-    
-    func setValueTabBarItem(){
-        self.tabBarItem.title = "Portfolio"
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

@@ -19,13 +19,11 @@ class ESAboutMeViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "LaunchImage.jpg")!)
         self.view.backgroundColor = UIColor(red: 33/255, green: 157/255, blue: 182/255, alpha: 1.0)
         setValueImage()
         setValueLabelMyName()
         setValueLabelAboutMe()
         setValueMyInterests()
-        setValueTabBarItem()
         UIApplication.sharedApplication().statusBarStyle = .LightContent
     }
     
@@ -53,10 +51,5 @@ class ESAboutMeViewController: UIViewController {
         self.textViewMyInterests.textColor = UIColor.whiteColor()
         self.textViewMyInterests.selectable = false
         self.textViewMyInterests.text = "Meus interesses são desenvolvimento mobile na plataforma iOS e Mac OS X, integração dentre devices, desenvolvimento ágil, gerência de projetos e sistemas distribuídos"
-    }
-    
-    func setValueTabBarItem(){
-        self.tabBarItem.title = "About Me"
-    }
-    
+    }    
 }

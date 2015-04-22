@@ -59,7 +59,7 @@
                             <constraint firstItem="RHl-J5-5OM" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="vp3-Lq-pP0"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="NLD-rI-gBX"/>
+                    <tabBarItem key="tabBarItem" title="About Me" id="NLD-rI-gBX"/>
                     <connections>
                         <outlet property="labelAboutMe" destination="RHl-J5-5OM" id="eZx-vU-cww"/>
                         <outlet property="labelMyName" destination="DJ6-rs-uSj" id="4BM-b0-BvU"/>
@@ -193,7 +193,7 @@
                             <constraint firstItem="NXc-Ya-ukt" firstAttribute="top" secondItem="mDG-J0-9Fq" secondAttribute="bottom" id="veo-b2-rYg"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="7mm-xi-0BY"/>
+                    <tabBarItem key="tabBarItem" title="Projects" id="7mm-xi-0BY"/>
                     <connections>
                         <outlet property="labelAboutMe" destination="sFh-iQ-AD9" id="1nJ-ee-uDI"/>
                         <outlet property="labelMyName" destination="FmG-t9-uUp" id="8Ga-KG-tJh"/>
@@ -300,7 +300,7 @@
                             <constraint firstItem="KHS-B6-NzG" firstAttribute="top" secondItem="mOC-Wq-ove" secondAttribute="bottom" constant="8" id="siE-hl-a8f"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="YaM-uj-I0I"/>
+                    <tabBarItem key="tabBarItem" title="Portfolio" id="YaM-uj-I0I"/>
                     <connections>
                         <outlet property="labelAboutMe" destination="KHS-B6-NzG" id="fK9-rh-UsH"/>
                         <outlet property="labelMyName" destination="mOC-Wq-ove" id="UkJ-F6-MDJ"/>

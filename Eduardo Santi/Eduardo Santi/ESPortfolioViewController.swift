@@ -53,6 +53,7 @@ class ESPortfolioViewController: UIViewController, UITableViewDataSource, UITabl
         return self.portfolio.projects.count;
     }
     
+    /*
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
         
@@ -69,13 +70,13 @@ class ESPortfolioViewController: UIViewController, UITableViewDataSource, UITabl
     func showAlertView(){
         var alert = UIAlertView(title: "Link Unavailable", message: "Aguardando aprovação da App Store", delegate: self, cancelButtonTitle: "OK")
         alert.show()
-    }
+    }*/
     
     func setConfigurationsTableView(){
         self.tableViewPortfolio.backgroundColor = UIColor(red: 109/255, green: 2/255, blue: 175/255, alpha: 1.0)
         self.tableViewPortfolio.tableFooterView = UIView(frame: CGRectZero)
         self.tableViewPortfolio.separatorColor = UIColor.clearColor()
-        //tableView.allowsSelection = false
+        self.tableViewPortfolio.allowsSelection = false
 
     }
 

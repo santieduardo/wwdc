@@ -18,6 +18,10 @@ class ESExperienceViewController: UIViewController, UITableViewDataSource, UITab
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.setBackgroundColor()
+    }
+    
+    func setBackgroundColor(){
         self.view.backgroundColor = UIColor(red: 31/255, green: 131/255, blue: 192/255, alpha: 1.0)
     }
     

@@ -19,36 +19,24 @@ class ESPortfolioViewController: UIViewController, UITableViewDataSource, UITabl
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        self.setBackgroundColor()
+    }
+    
+    func setBackgroundColor(){
         self.view.backgroundColor = UIColor(red: 109/255, green: 2/255, blue: 175/255, alpha: 1.0)
-        setValueImage()
-        setValueLabelMyName()
-        setValueLabelAboutMe()
-    }
-    
-    func setValueImage(){
-        myPhoto.layer.borderWidth = 1.0
-        myPhoto.layer.masksToBounds = false
-        myPhoto.layer.borderColor = UIColor.whiteColor().CGColor
-        myPhoto.layer.cornerRadius = myPhoto.frame.size.height/2
-        myPhoto.clipsToBounds = true
-    }
-    
-    func setValueLabelMyName(){
-        self.labelMyName.text = "Eduardo Santi"
-        self.labelMyName.textColor = UIColor.whiteColor()
-    }
-    
-    func setValueLabelAboutMe(){
-        self.labelAboutMe.text = "BEPiD and Analysis and Systems Development Student"
-        self.labelAboutMe.textColor = UIColor.whiteColor()
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
         
-        var textURL = cell.viewWithTag(30) as! UILabel
-        var url = textURL.text
-        UIApplication.sharedApplication().openURL(NSURL(string: url!)!)
+        if indexPath.row != 0{
+            var textURL = cell.viewWithTag(30) as! UILabel
+            var url = self.portfolio.url[indexPath.row]
+            UIApplication.sharedApplication().openURL(NSURL(string: url)!)
+            println(url)
+        } else {
+            
+        }
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

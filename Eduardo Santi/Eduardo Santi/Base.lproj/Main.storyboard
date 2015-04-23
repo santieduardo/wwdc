@@ -183,27 +183,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="My Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOC-Wq-ove">
-                                <rect key="frame" x="144" y="69" width="440" height="21"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="Ogm-Dk-tgn">
-                                <rect key="frame" x="16" y="20" width="120" height="120"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="Ebx-AP-Mv1"/>
-                                    <constraint firstAttribute="width" constant="120" id="MNP-Mj-DAr"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="My Information" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHS-B6-NzG">
-                                <rect key="frame" x="144" y="98" width="440" height="21"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="13"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="160" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="DZl-eR-vWk">
-                                <rect key="frame" x="0.0" y="150" width="600" height="401"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="160" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="DZl-eR-vWk">
+                                <rect key="frame" x="0.0" y="20" width="600" height="531"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="160" id="V57-9m-ER2">
@@ -254,25 +235,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ohY-VZ-w8O" firstAttribute="top" secondItem="DZl-eR-vWk" secondAttribute="bottom" id="4Mp-8F-lim"/>
-                            <constraint firstItem="Ogm-Dk-tgn" firstAttribute="top" secondItem="hj6-KV-O9z" secondAttribute="bottom" id="IV4-LN-isO"/>
-                            <constraint firstItem="mOC-Wq-ove" firstAttribute="top" secondItem="hj6-KV-O9z" secondAttribute="bottom" constant="49" id="KC7-Vg-eMi"/>
-                            <constraint firstItem="Ogm-Dk-tgn" firstAttribute="leading" secondItem="wy5-Ly-1zq" secondAttribute="leadingMargin" id="N98-wU-qiX"/>
-                            <constraint firstItem="mOC-Wq-ove" firstAttribute="leading" secondItem="Ogm-Dk-tgn" secondAttribute="trailing" constant="8" id="NPI-6i-Any"/>
                             <constraint firstItem="DZl-eR-vWk" firstAttribute="leading" secondItem="wy5-Ly-1zq" secondAttribute="leadingMargin" constant="-16" id="PPt-vp-Kmo"/>
-                            <constraint firstItem="mOC-Wq-ove" firstAttribute="trailing" secondItem="wy5-Ly-1zq" secondAttribute="trailingMargin" id="b8Y-qc-Fdk"/>
-                            <constraint firstItem="KHS-B6-NzG" firstAttribute="leading" secondItem="Ogm-Dk-tgn" secondAttribute="trailing" constant="8" id="ka8-16-bsu"/>
-                            <constraint firstItem="KHS-B6-NzG" firstAttribute="trailing" secondItem="wy5-Ly-1zq" secondAttribute="trailingMargin" id="mW1-n9-NyZ"/>
-                            <constraint firstItem="DZl-eR-vWk" firstAttribute="top" secondItem="Ogm-Dk-tgn" secondAttribute="bottom" constant="10" id="r5I-hz-MLW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="DZl-eR-vWk" secondAttribute="trailing" constant="-16" id="sAR-0g-JCc"/>
-                            <constraint firstItem="KHS-B6-NzG" firstAttribute="top" secondItem="mOC-Wq-ove" secondAttribute="bottom" constant="8" id="siE-hl-a8f"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Portfolio" id="YaM-uj-I0I"/>
-                    <connections>
-                        <outlet property="labelAboutMe" destination="KHS-B6-NzG" id="fK9-rh-UsH"/>
-                        <outlet property="labelMyName" destination="mOC-Wq-ove" id="UkJ-F6-MDJ"/>
-                        <outlet property="myPhoto" destination="Ogm-Dk-tgn" id="kf7-KT-dOF"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cAd-uV-gu7" sceneMemberID="firstResponder"/>
             </objects>

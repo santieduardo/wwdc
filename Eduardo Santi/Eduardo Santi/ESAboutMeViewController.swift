@@ -20,15 +20,18 @@ class ESAboutMeViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.view.backgroundColor = UIColor(red: 33/255, green: 157/255, blue: 182/255, alpha: 1.0)
-        setValueImage()
-        setValueLabelMyName()
-        setValueLabelAboutMe()
-        setValueMyInterests()
-        UIApplication.sharedApplication().statusBarStyle = .LightContent
+        self.setBackgroundColor()
+        setConfigurationsImage()
+        setConfigurationsLabelMyName()
+        setConfigurationsLabelAboutMe()
+        setConfigurationsMyInterests()
     }
     
-    func setValueImage(){
+    func setBackgroundColor(){
+        self.view.backgroundColor = UIColor(red: 33/255, green: 157/255, blue: 182/255, alpha: 1.0)
+    }
+    
+    func setConfigurationsImage(){
         myPhoto.layer.borderWidth = 1.0
         myPhoto.layer.masksToBounds = false
         myPhoto.layer.borderColor = UIColor.whiteColor().CGColor
@@ -36,17 +39,17 @@ class ESAboutMeViewController: UIViewController {
         myPhoto.clipsToBounds = true
     }
     
-    func setValueLabelMyName(){
+    func setConfigurationsLabelMyName(){
         self.labelMyName.text = self.aboutMe.name
         self.labelMyName.textColor = UIColor.whiteColor()
     }
     
-    func setValueLabelAboutMe(){
+    func setConfigurationsLabelAboutMe(){
         self.labelAboutMe.text = self.aboutMe.information
         self.labelAboutMe.textColor = UIColor.whiteColor()
     }
     
-    func setValueMyInterests(){
+    func setConfigurationsMyInterests(){
         self.textViewMyInterests.editable = false
         self.textViewMyInterests.backgroundColor = UIColor.clearColor()
         self.textViewMyInterests.textColor = UIColor.whiteColor()

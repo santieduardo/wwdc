@@ -11,6 +11,9 @@ import UIKit
 class ESPortfolioViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
 
     @IBOutlet weak var tableViewPortfolio: UITableView!
+    @IBOutlet weak var myPhoto: UIImageView!
+    @IBOutlet weak var labelTitle: UILabel!
+    
     var portfolio: ESPortfolio = ESPortfolio()
     
     override func viewDidLoad() {
@@ -18,11 +21,27 @@ class ESPortfolioViewController: UIViewController, UITableViewDataSource, UITabl
         // Do any additional setup after loading the view, typically from a nib.
         
         self.setBackgroundColor()
+        self.setConfigurationsImage()
+        self.setConfigurationsTitle()
     }
     
     func setBackgroundColor(){
         self.view.backgroundColor = UIColor(red: 109/255, green: 2/255, blue: 175/255, alpha: 1.0)
     }
+    
+    func setConfigurationsImage(){
+        myPhoto.layer.borderWidth = 1.0
+        myPhoto.layer.masksToBounds = false
+        myPhoto.layer.borderColor = UIColor.whiteColor().CGColor
+        myPhoto.layer.cornerRadius = myPhoto.frame.size.height/2
+        myPhoto.clipsToBounds = true
+    }
+    
+    func setConfigurationsTitle(){
+        self.labelTitle.text = self.portfolio.title
+        self.labelTitle.textColor = UIColor.whiteColor()
+    }
+
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell

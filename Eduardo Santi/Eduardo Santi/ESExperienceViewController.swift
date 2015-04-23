@@ -10,27 +10,49 @@ import UIKit
 
 class ESExperienceViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBOutlet weak var myPhoto: UIImageView!
+    @IBOutlet weak var labelTitle: UILabel!
+    @IBOutlet weak var tableViewExperience: UITableView!
     var experience: ESExperience = ESExperience()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.setBackgroundColor()
+        self.setConfigurationsImage()
+        self.setConfigurationsTitle()
     }
     
     func setBackgroundColor(){
         self.view.backgroundColor = UIColor(red: 31/255, green: 131/255, blue: 192/255, alpha: 1.0)
     }
     
+    func setConfigurationsImage(){
+        myPhoto.layer.borderWidth = 1.0
+        myPhoto.layer.masksToBounds = false
+        myPhoto.layer.borderColor = UIColor.whiteColor().CGColor
+        myPhoto.layer.cornerRadius = myPhoto.frame.size.height/2
+        myPhoto.clipsToBounds = true
+    }
+    
+    func setConfigurationsTitle(){
+        self.labelTitle.text = self.experience.title
+        self.labelTitle.textColor = UIColor.whiteColor()
+    }
+    
+    func setConfigurationsTableView(){
+        self.tableViewExperience.backgroundColor = UIColor(red: 31/255, green: 131/255, blue: 192/255, alpha: 1.0)
+        self.tableViewExperience.tableFooterView = UIView(frame: CGRectZero)
+        self.tableViewExperience.separatorColor = UIColor.clearColor()
+        self.tableViewExperience.allowsSelection = false
+        
+    }
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
         
         cell.backgroundColor = UIColor(red: 31/255, green: 131/255, blue: 192/255, alpha: 1.0)
-        
-        tableView.backgroundColor = UIColor(red: 31/255, green: 131/255, blue: 192/255, alpha: 1.0)
-        tableView.tableFooterView = UIView(frame: CGRectZero)
-        tableView.separatorColor = UIColor.clearColor()
-        tableView.allowsSelection = false
+        self.setConfigurationsTableView()
         
         var textWork = cell.viewWithTag(10) as! UILabel
         textWork.text = self.experience.works[indexPath.row]

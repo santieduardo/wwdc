@@ -9,10 +9,8 @@
 import UIKit
 
 class ESPortfolioViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
-    
-    @IBOutlet weak var myPhoto: UIImageView!
-    @IBOutlet weak var labelMyName: UILabel!
-    @IBOutlet weak var labelAboutMe: UILabel!
+
+    @IBOutlet weak var tableViewPortfolio: UITableView!
     var portfolio: ESPortfolio = ESPortfolio()
     
     override func viewDidLoad() {
@@ -26,29 +24,11 @@ class ESPortfolioViewController: UIViewController, UITableViewDataSource, UITabl
         self.view.backgroundColor = UIColor(red: 109/255, green: 2/255, blue: 175/255, alpha: 1.0)
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
-        
-        if indexPath.row != 0{
-            var textURL = cell.viewWithTag(30) as! UILabel
-            var url = self.portfolio.url[indexPath.row]
-            UIApplication.sharedApplication().openURL(NSURL(string: url)!)
-            println(url)
-        } else {
-            
-        }
-    }
-    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
         
         cell.backgroundColor = UIColor(red: 109/255, green: 2/255, blue: 175/255, alpha: 1.0)
-        
-        tableView.backgroundColor = UIColor(red: 109/255, green: 2/255, blue: 175/255, alpha: 1.0)
-        tableView.tableFooterView = UIView(frame: CGRectZero)
-        tableView.separatorColor = UIColor.clearColor()
-        //tableView.allowsSelection = false
-        
+        self.setConfigurationsTableView()
         
         var textProject = cell.viewWithTag(10) as! UILabel
         textProject.text = self.portfolio.projects[indexPath.row]
@@ -71,6 +51,32 @@ class ESPortfolioViewController: UIViewController, UITableViewDataSource, UITabl
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.portfolio.projects.count;
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
+        
+        if indexPath.row != 0{
+            var textURL = cell.viewWithTag(30) as! UILabel
+            var url = self.portfolio.url[indexPath.row]
+            UIApplication.sharedApplication().openURL(NSURL(string: url)!)
+            println(url)
+        } else {
+            self.showAlertView()
+        }
+    }
+    
+    func showAlertView(){
+        var alert = UIAlertView(title: "Link Unavailable", message: "Aguardando aprovação da App Store", delegate: self, cancelButtonTitle: "OK")
+        alert.show()
+    }
+    
+    func setConfigurationsTableView(){
+        self.tableViewPortfolio.backgroundColor = UIColor(red: 109/255, green: 2/255, blue: 175/255, alpha: 1.0)
+        self.tableViewPortfolio.tableFooterView = UIView(frame: CGRectZero)
+        self.tableViewPortfolio.separatorColor = UIColor.clearColor()
+        //tableView.allowsSelection = false
+
     }
 
 }

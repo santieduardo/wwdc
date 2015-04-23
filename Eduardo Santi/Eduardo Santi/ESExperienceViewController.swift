@@ -10,9 +10,6 @@ import UIKit
 
 class ESExperienceViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    @IBOutlet weak var myPhoto: UIImageView!
-    @IBOutlet weak var labelMyName: UILabel!
-    @IBOutlet weak var labelAboutMe: UILabel!
     var experience: ESExperience = ESExperience()
     
     override func viewDidLoad() {

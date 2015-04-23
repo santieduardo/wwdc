@@ -85,6 +85,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="488-WQ-m0a"/>
                         <segue destination="9qr-lO-ZRI" kind="relationship" relationship="viewControllers" id="SH4-d6-Zic"/>
                         <segue destination="KYU-2J-33e" kind="relationship" relationship="viewControllers" id="Cvw-DS-8Vs"/>
+                        <segue destination="Eak-aU-64S" kind="relationship" relationship="viewControllers" id="z5q-hL-5MO"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Cr-fp-AJA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -247,6 +248,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cAd-uV-gu7" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1152" y="792"/>
+        </scene>
+        <!--Technical Skills-->
+        <scene sceneID="YTN-4i-gLM">
+            <objects>
+                <viewController title="Technical Skills" id="Eak-aU-64S" customClass="ESTechnicalSkillViewController" customModule="Eduardo_Santi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6kY-vo-tB7"/>
+                        <viewControllerLayoutGuide type="bottom" id="0OO-PO-XVO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CX2-Xt-MKK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Skills" id="lxs-HD-brE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8sv-8V-w0N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1783" y="792"/>
         </scene>
     </scenes>
     <resources>

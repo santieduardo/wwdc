@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A04D03BD1AE87FCB00A28276 /* ESTechnicalSkill.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04D03BC1AE87FCB00A28276 /* ESTechnicalSkill.swift */; };
+		A04D03BF1AE8808500A28276 /* ESTechnicalSkillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04D03BE1AE8808500A28276 /* ESTechnicalSkillViewController.swift */; };
 		A084B6951AE5927600D2D022 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A084B6941AE5927600D2D022 /* AppDelegate.swift */; };
 		A084B6971AE5927600D2D022 /* ESAboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A084B6961AE5927600D2D022 /* ESAboutMeViewController.swift */; };
 		A084B69A1AE5927600D2D022 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A084B6981AE5927600D2D022 /* Main.storyboard */; };
@@ -31,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A04D03BC1AE87FCB00A28276 /* ESTechnicalSkill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTechnicalSkill.swift; sourceTree = "<group>"; };
+		A04D03BE1AE8808500A28276 /* ESTechnicalSkillViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTechnicalSkillViewController.swift; sourceTree = "<group>"; };
 		A084B68F1AE5927600D2D022 /* Eduardo Santi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eduardo Santi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A084B6931AE5927600D2D022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A084B6941AE5927600D2D022 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +86,7 @@
 				A084B6961AE5927600D2D022 /* ESAboutMeViewController.swift */,
 				A0B691191AE7233A006F3F1B /* ESExperienceViewController.swift */,
 				A087AF9D1AE74452009538B3 /* ESPortfolioViewController.swift */,
+				A04D03BE1AE8808500A28276 /* ESTechnicalSkillViewController.swift */,
 			);
 			name = classes;
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 				A0DCF48F1AE8219400259A8B /* ESAboutMe.swift */,
 				A0DCF4911AE824BA00259A8B /* ESExperience.swift */,
 				A0DCF4931AE8269500259A8B /* ESPortfolio.swift */,
+				A04D03BC1AE87FCB00A28276 /* ESTechnicalSkill.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -265,8 +271,10 @@
 				A0DCF4901AE8219400259A8B /* ESAboutMe.swift in Sources */,
 				A087AF9E1AE74452009538B3 /* ESPortfolioViewController.swift in Sources */,
 				A0DCF4921AE824BA00259A8B /* ESExperience.swift in Sources */,
+				A04D03BF1AE8808500A28276 /* ESTechnicalSkillViewController.swift in Sources */,
 				A0B6911A1AE7233A006F3F1B /* ESExperienceViewController.swift in Sources */,
 				A084B6951AE5927600D2D022 /* AppDelegate.swift in Sources */,
+				A04D03BD1AE87FCB00A28276 /* ESTechnicalSkill.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

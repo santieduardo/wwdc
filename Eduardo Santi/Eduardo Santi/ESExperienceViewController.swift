@@ -45,7 +45,6 @@ class ESExperienceViewController: UIViewController, UITableViewDataSource, UITab
         self.tableViewExperience.tableFooterView = UIView(frame: CGRectZero)
         self.tableViewExperience.separatorColor = UIColor.clearColor()
         self.tableViewExperience.allowsSelection = false
-        
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

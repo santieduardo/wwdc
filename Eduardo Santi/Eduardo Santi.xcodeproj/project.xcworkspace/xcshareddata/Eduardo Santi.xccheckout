@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>95DB2F37-6D1F-4809-B373-F58885FC5E5B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Eduardo Santi</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F730CD8D8B4EAE286A75BD9BD1659C2BC41AA082</key>
+		<string>https://github.com/santieduardo/wwdc.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Eduardo Santi/Eduardo Santi.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F730CD8D8B4EAE286A75BD9BD1659C2BC41AA082</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/santieduardo/wwdc.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F730CD8D8B4EAE286A75BD9BD1659C2BC41AA082</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F730CD8D8B4EAE286A75BD9BD1659C2BC41AA082</string>
+			<key>IDESourceControlWCCName</key>
+			<string>wwdc</string>
+		</dict>
+	</array>
+</dict>
+</plist>

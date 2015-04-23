@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A04D03BD1AE87FCB00A28276 /* ESTechnicalSkill.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04D03BC1AE87FCB00A28276 /* ESTechnicalSkill.swift */; };
 		A04D03BF1AE8808500A28276 /* ESTechnicalSkillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04D03BE1AE8808500A28276 /* ESTechnicalSkillViewController.swift */; };
+		A0753CFA1AE9615F00E145CF /* petsbay.mov in Resources */ = {isa = PBXBuildFile; fileRef = A0753CF91AE9615F00E145CF /* petsbay.mov */; };
+		A0753CFC1AE96EC800E145CF /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0753CFB1AE96EC800E145CF /* MediaPlayer.framework */; };
 		A084B6951AE5927600D2D022 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A084B6941AE5927600D2D022 /* AppDelegate.swift */; };
 		A084B6971AE5927600D2D022 /* ESAboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A084B6961AE5927600D2D022 /* ESAboutMeViewController.swift */; };
 		A084B69A1AE5927600D2D022 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A084B6981AE5927600D2D022 /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 /* Begin PBXFileReference section */
 		A04D03BC1AE87FCB00A28276 /* ESTechnicalSkill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTechnicalSkill.swift; sourceTree = "<group>"; };
 		A04D03BE1AE8808500A28276 /* ESTechnicalSkillViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTechnicalSkillViewController.swift; sourceTree = "<group>"; };
+		A0753CF91AE9615F00E145CF /* petsbay.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = petsbay.mov; sourceTree = "<group>"; };
+		A0753CFB1AE96EC800E145CF /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		A084B68F1AE5927600D2D022 /* Eduardo Santi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eduardo Santi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A084B6931AE5927600D2D022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A084B6941AE5927600D2D022 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0753CFC1AE96EC800E145CF /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				A084B69B1AE5927600D2D022 /* Images.xcassets */,
+				A0753CF91AE9615F00E145CF /* petsbay.mov */,
 			);
 			name = assets;
 			sourceTree = "<group>";
@@ -102,6 +108,7 @@
 		A084B6861AE5927600D2D022 = {
 			isa = PBXGroup;
 			children = (
+				A0753CFB1AE96EC800E145CF /* MediaPlayer.framework */,
 				A084B6911AE5927600D2D022 /* Eduardo Santi */,
 				A084B6A71AE5927700D2D022 /* Eduardo SantiTests */,
 				A084B6901AE5927600D2D022 /* Products */,
@@ -249,6 +256,7 @@
 				A084B69A1AE5927600D2D022 /* Main.storyboard in Resources */,
 				A084B69F1AE5927600D2D022 /* LaunchScreen.xib in Resources */,
 				A084B69C1AE5927600D2D022 /* Images.xcassets in Resources */,
+				A0753CFA1AE9615F00E145CF /* petsbay.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import MediaPlayer
+import MobileCoreServices
 
 class ESPortfolioViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
 
@@ -15,6 +17,7 @@ class ESPortfolioViewController: UIViewController, UITableViewDataSource, UITabl
     @IBOutlet weak var labelTitle: UILabel!
     
     var portfolio: ESPortfolio = ESPortfolio()
+    var moviePlayer: MPMoviePlayerController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +45,6 @@ class ESPortfolioViewController: UIViewController, UITableViewDataSource, UITabl
         self.labelTitle.textColor = UIColor.whiteColor()
     }
 
-    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
         
@@ -72,31 +74,59 @@ class ESPortfolioViewController: UIViewController, UITableViewDataSource, UITabl
         return self.portfolio.projects.count;
     }
     
-    /*
+    
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
+        cell.backgroundColor = UIColor(red: 109/255, green: 2/255, blue: 175/255, alpha: 1.0)
+        self.setConfigurationsTableView()
         
-        if indexPath.row != 0{
+        if indexPath.row == 0{
+            self.playMovie()
+        }else{
+            var textProject = cell.viewWithTag(10) as! UILabel
+            textProject.text = self.portfolio.projects[indexPath.row]
+            textProject.textColor = UIColor.whiteColor()
+            
+            var textDescription = cell.viewWithTag(20) as! UITextView
+            textDescription.text = self.portfolio.descriptions[indexPath.row]
+            textDescription.textColor = UIColor.whiteColor()
+            textDescription.backgroundColor = UIColor(red: 109/255, green: 2/255, blue: 175/255, alpha: 1.0)
+            textDescription.editable = false
+            textDescription.selectable = false
+            textDescription.scrollEnabled = false
+            
             var textURL = cell.viewWithTag(30) as! UILabel
-            var url = self.portfolio.url[indexPath.row]
-            UIApplication.sharedApplication().openURL(NSURL(string: url)!)
-            println(url)
-        } else {
-            self.showAlertView()
+            textURL.text = self.portfolio.url[indexPath.row]
+            textURL.textColor = UIColor.whiteColor()
         }
     }
     
-    func showAlertView(){
-        var alert = UIAlertView(title: "Link Unavailable", message: "Aguardando aprovação da App Store", delegate: self, cancelButtonTitle: "OK")
-        alert.show()
-    }*/
+    func playMovie(){
+        let path = NSBundle.mainBundle().pathForResource("petsbay", ofType:"mov")
+        let url = NSURL.fileURLWithPath(path!)
+        self.moviePlayer = MPMoviePlayerController(contentURL: url)
+        if let player = self.moviePlayer {
+            player.view.frame = self.view.bounds
+            player.prepareToPlay()
+            player.scalingMode = .AspectFill
+            self.view.addSubview(player.view)
+            self.tabBarController?.tabBar.hidden = true
+            NSNotificationCenter.defaultCenter().addObserver(self, selector: "dismissPlayer", name: MPMoviePlayerPlaybackDidFinishNotification, object: player)
+            NSNotificationCenter.defaultCenter().addObserver(self, selector: "dismissPlayer", name: MPMoviePlayerDidExitFullscreenNotification, object: player)
+        }
+    }
+    
+    func dismissPlayer(){
+        moviePlayer.stop()
+        moviePlayer.view.removeFromSuperview()
+        tableViewPortfolio.reloadData()
+    }
     
     func setConfigurationsTableView(){
         self.tableViewPortfolio.backgroundColor = UIColor(red: 109/255, green: 2/255, blue: 175/255, alpha: 1.0)
         self.tableViewPortfolio.tableFooterView = UIView(frame: CGRectZero)
         self.tableViewPortfolio.separatorColor = UIColor.clearColor()
-        self.tableViewPortfolio.allowsSelection = false
-
+        //self.tableViewPortfolio.allowsSelection = false
     }
 
 }

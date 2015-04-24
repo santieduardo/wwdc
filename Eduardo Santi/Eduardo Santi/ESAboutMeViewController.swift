@@ -13,6 +13,7 @@ class ESAboutMeViewController: UIViewController {
     @IBOutlet weak var myPhoto: UIImageView!
     @IBOutlet weak var labelMyName: UILabel!
     @IBOutlet weak var labelAboutMe: UILabel!
+    @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var textViewMyInterests: UITextView!
     var aboutMe: ESAboutMe = ESAboutMe()
     
@@ -21,10 +22,11 @@ class ESAboutMeViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         self.setBackgroundColor()
-        setConfigurationsImage()
-        setConfigurationsLabelMyName()
-        setConfigurationsLabelAboutMe()
-        setConfigurationsMyInterests()
+        self.setConfigurationsImage()
+        self.setConfigurationsLabelMyName()
+        self.setConfigurationsTitle()
+        self.setConfigurationsLabelAboutMe()
+        self.setConfigurationsMyInterests()
     }
     
     func setBackgroundColor(){
@@ -42,6 +44,11 @@ class ESAboutMeViewController: UIViewController {
     func setConfigurationsLabelMyName(){
         self.labelMyName.text = self.aboutMe.name
         self.labelMyName.textColor = UIColor.whiteColor()
+    }
+    
+    func setConfigurationsTitle(){
+        self.labelTitle.text = self.aboutMe.title
+        self.labelTitle.textColor = UIColor.whiteColor()
     }
     
     func setConfigurationsLabelAboutMe(){

@@ -99,6 +99,7 @@ class ESPortfolioViewController: UIViewController, UITableViewDataSource, UITabl
             textURL.text = self.portfolio.url[indexPath.row]
             textURL.textColor = UIColor.whiteColor()
         }
+        
     }
     
     func playMovie(){
@@ -120,6 +121,7 @@ class ESPortfolioViewController: UIViewController, UITableViewDataSource, UITabl
         moviePlayer.stop()
         moviePlayer.view.removeFromSuperview()
         tableViewPortfolio.reloadData()
+        self.tabBarController?.tabBar.hidden = false
     }
     
     func setConfigurationsTableView(){

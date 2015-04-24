@@ -11,6 +11,6 @@ import UIKit
 class ESTechnicalSkill: NSObject {
     
     var title = "Technical Skills"
-    var experiences = ["dsdssddsds", "dsdsafdsvdscvsdfdscdscdsvdsvdsvdsdsscdsvdsvdsvdsdsscdsvdsvdsvdsdsscdsvdaeeaf", "dsdssddsdsdsdsgrdhtfjf"]
+    var experiences = ["Experiencia nas linguagens de programação Objective C, Swift, PHP, JavaScript e Java", "dsdsafdsvdscvsdfdscdscdsvdsvdsvdsdsscdsvdsvdsvdsdsscdsvdsvdsvdsdsscdsvdaeeaf", "dsdssddsdsdsdsgrdhtfjf"]
     
 }

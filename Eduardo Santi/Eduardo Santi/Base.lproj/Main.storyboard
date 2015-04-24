@@ -77,7 +77,7 @@
                             <constraint firstItem="RHl-J5-5OM" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="wFK-8j-wwo"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="About Me" id="NLD-rI-gBX"/>
+                    <tabBarItem key="tabBarItem" title="About Me" image="about" id="NLD-rI-gBX"/>
                     <connections>
                         <outlet property="labelAboutMe" destination="RHl-J5-5OM" id="eZx-vU-cww"/>
                         <outlet property="labelMyName" destination="DJ6-rs-uSj" id="4BM-b0-BvU"/>
@@ -208,7 +208,7 @@
                             <constraint firstItem="pUO-bb-nfM" firstAttribute="top" secondItem="mDG-J0-9Fq" secondAttribute="bottom" id="awO-10-GLo"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Experience" id="7mm-xi-0BY"/>
+                    <tabBarItem key="tabBarItem" title="Experience" image="experience" id="7mm-xi-0BY"/>
                     <connections>
                         <outlet property="labelTitle" destination="JA0-pz-7bq" id="Ybe-qa-QO0"/>
                         <outlet property="myPhoto" destination="pUO-bb-nfM" id="68i-O8-RKh"/>
@@ -310,7 +310,7 @@
                             <constraint firstItem="Fhh-uc-5aY" firstAttribute="leading" secondItem="wy5-Ly-1zq" secondAttribute="leadingMargin" id="pH3-Y9-una"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Portfolio" id="YaM-uj-I0I"/>
+                    <tabBarItem key="tabBarItem" title="Portfolio" image="portfolio" id="YaM-uj-I0I"/>
                     <connections>
                         <outlet property="labelTitle" destination="Fhh-uc-5aY" id="S3K-Df-xLn"/>
                         <outlet property="myPhoto" destination="xhe-ha-o8c" id="Dby-z4-CMa"/>
@@ -393,7 +393,7 @@
                             <constraint firstItem="tR1-pw-g5j" firstAttribute="leading" secondItem="CX2-Xt-MKK" secondAttribute="leadingMargin" id="ocK-oF-TSj"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Skills" id="lxs-HD-brE"/>
+                    <tabBarItem key="tabBarItem" title="Skills" image="skills" id="lxs-HD-brE"/>
                     <connections>
                         <outlet property="labelTitle" destination="QT8-NH-x6a" id="JM5-XD-3Gd"/>
                         <outlet property="myPhoto" destination="tR1-pw-g5j" id="czf-Ff-1lY"/>
@@ -455,6 +455,9 @@
                                 <state key="normal" title="E-mail">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="sendEmail:" destination="cYa-1Y-cYl" eventType="touchUpInside" id="zxK-nY-ZrB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGW-xQ-JM6">
                                 <rect key="frame" x="16" y="292" width="568" height="30"/>
@@ -464,6 +467,9 @@
                                 <state key="normal" title="Github">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="goGithub:" destination="cYa-1Y-cYl" eventType="touchUpInside" id="74c-Mk-qlZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1P9-3u-hMd">
                                 <rect key="frame" x="16" y="254" width="568" height="30"/>
@@ -473,6 +479,9 @@
                                 <state key="normal" title="Phone">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="call:" destination="cYa-1Y-cYl" eventType="touchUpInside" id="5ox-z2-jVf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -499,7 +508,7 @@
                             <constraint firstItem="OBh-Xg-MHN" firstAttribute="top" secondItem="umG-V9-7Ta" secondAttribute="bottom" constant="8" id="zxx-tF-UgY"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Contact" id="OVS-hW-8xO"/>
+                    <tabBarItem key="tabBarItem" title="Contact" image="contact" id="OVS-hW-8xO"/>
                     <connections>
                         <outlet property="labelMyInformation" destination="pij-8Z-RFM" id="hAa-8z-ILw"/>
                         <outlet property="labelMyName" destination="cLR-9S-eR2" id="xzP-UE-aKL"/>
@@ -512,6 +521,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="about" width="40" height="40"/>
+        <image name="contact" width="38" height="40"/>
+        <image name="experience" width="30" height="40"/>
         <image name="myPhoto" width="750" height="750"/>
+        <image name="portfolio" width="38" height="45"/>
+        <image name="skills" width="32" height="32"/>
     </resources>
 </document>

@@ -11,19 +11,6 @@
 		A04D03BF1AE8808500A28276 /* ESTechnicalSkillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04D03BE1AE8808500A28276 /* ESTechnicalSkillViewController.swift */; };
 		A0753CFA1AE9615F00E145CF /* petsbay.mov in Resources */ = {isa = PBXBuildFile; fileRef = A0753CF91AE9615F00E145CF /* petsbay.mov */; };
 		A0753CFC1AE96EC800E145CF /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0753CFB1AE96EC800E145CF /* MediaPlayer.framework */; };
-		A0753D001AE9807500E145CF /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0753CFE1AE9807500E145CF /* Bolts.framework */; };
-		A0753D011AE9807500E145CF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0753CFF1AE9807500E145CF /* Parse.framework */; };
-		A0753D031AE9811900E145CF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0753D021AE9811900E145CF /* AudioToolbox.framework */; };
-		A0753D051AE9812200E145CF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0753D041AE9812200E145CF /* CFNetwork.framework */; };
-		A0753D071AE9815700E145CF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0753D061AE9815700E145CF /* CoreGraphics.framework */; };
-		A0753D091AE9816100E145CF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0753D081AE9816100E145CF /* CoreLocation.framework */; };
-		A0753D0B1AE9816E00E145CF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0753D0A1AE9816E00E145CF /* MobileCoreServices.framework */; };
-		A0753D0D1AE9817A00E145CF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0753D0C1AE9817A00E145CF /* QuartzCore.framework */; };
-		A0753D0F1AE9818300E145CF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0753D0E1AE9818300E145CF /* Security.framework */; };
-		A0753D111AE9818800E145CF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0753D101AE9818800E145CF /* StoreKit.framework */; };
-		A0753D131AE9819400E145CF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0753D121AE9819400E145CF /* SystemConfiguration.framework */; };
-		A0753D151AE981AA00E145CF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A0753D141AE981AA00E145CF /* libz.dylib */; };
-		A0753D171AE981B800E145CF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A0753D161AE981B800E145CF /* libsqlite3.dylib */; };
 		A084B6951AE5927600D2D022 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A084B6941AE5927600D2D022 /* AppDelegate.swift */; };
 		A084B6971AE5927600D2D022 /* ESAboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A084B6961AE5927600D2D022 /* ESAboutMeViewController.swift */; };
 		A084B69A1AE5927600D2D022 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A084B6981AE5927600D2D022 /* Main.storyboard */; };
@@ -52,19 +39,6 @@
 		A04D03BE1AE8808500A28276 /* ESTechnicalSkillViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTechnicalSkillViewController.swift; sourceTree = "<group>"; };
 		A0753CF91AE9615F00E145CF /* petsbay.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = petsbay.mov; sourceTree = "<group>"; };
 		A0753CFB1AE96EC800E145CF /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		A0753CFE1AE9807500E145CF /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		A0753CFF1AE9807500E145CF /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		A0753D021AE9811900E145CF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		A0753D041AE9812200E145CF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		A0753D061AE9815700E145CF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		A0753D081AE9816100E145CF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		A0753D0A1AE9816E00E145CF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		A0753D0C1AE9817A00E145CF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		A0753D0E1AE9818300E145CF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		A0753D101AE9818800E145CF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		A0753D121AE9819400E145CF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		A0753D141AE981AA00E145CF /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		A0753D161AE981B800E145CF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		A084B68F1AE5927600D2D022 /* Eduardo Santi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eduardo Santi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A084B6931AE5927600D2D022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A084B6941AE5927600D2D022 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,20 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0753D171AE981B800E145CF /* libsqlite3.dylib in Frameworks */,
-				A0753D151AE981AA00E145CF /* libz.dylib in Frameworks */,
-				A0753D131AE9819400E145CF /* SystemConfiguration.framework in Frameworks */,
-				A0753D111AE9818800E145CF /* StoreKit.framework in Frameworks */,
-				A0753D0F1AE9818300E145CF /* Security.framework in Frameworks */,
-				A0753D0D1AE9817A00E145CF /* QuartzCore.framework in Frameworks */,
-				A0753D0B1AE9816E00E145CF /* MobileCoreServices.framework in Frameworks */,
-				A0753D091AE9816100E145CF /* CoreLocation.framework in Frameworks */,
-				A0753D071AE9815700E145CF /* CoreGraphics.framework in Frameworks */,
-				A0753D051AE9812200E145CF /* CFNetwork.framework in Frameworks */,
-				A0753D031AE9811900E145CF /* AudioToolbox.framework in Frameworks */,
 				A0753CFC1AE96EC800E145CF /* MediaPlayer.framework in Frameworks */,
-				A0753D011AE9807500E145CF /* Parse.framework in Frameworks */,
-				A0753D001AE9807500E145CF /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,30 +105,10 @@
 			name = assets;
 			sourceTree = "<group>";
 		};
-		A0753CFD1AE9801800E145CF /* framework */ = {
-			isa = PBXGroup;
-			children = (
-				A0753D161AE981B800E145CF /* libsqlite3.dylib */,
-				A0753D141AE981AA00E145CF /* libz.dylib */,
-				A0753D121AE9819400E145CF /* SystemConfiguration.framework */,
-				A0753D101AE9818800E145CF /* StoreKit.framework */,
-				A0753D0E1AE9818300E145CF /* Security.framework */,
-				A0753D0C1AE9817A00E145CF /* QuartzCore.framework */,
-				A0753D0A1AE9816E00E145CF /* MobileCoreServices.framework */,
-				A0753D081AE9816100E145CF /* CoreLocation.framework */,
-				A0753D061AE9815700E145CF /* CoreGraphics.framework */,
-				A0753D041AE9812200E145CF /* CFNetwork.framework */,
-				A0753D021AE9811900E145CF /* AudioToolbox.framework */,
-				A0753CFB1AE96EC800E145CF /* MediaPlayer.framework */,
-				A0753CFE1AE9807500E145CF /* Bolts.framework */,
-				A0753CFF1AE9807500E145CF /* Parse.framework */,
-			);
-			name = framework;
-			sourceTree = "<group>";
-		};
 		A084B6861AE5927600D2D022 = {
 			isa = PBXGroup;
 			children = (
+				A0753CFB1AE96EC800E145CF /* MediaPlayer.framework */,
 				A084B6911AE5927600D2D022 /* Eduardo Santi */,
 				A084B6A71AE5927700D2D022 /* Eduardo SantiTests */,
 				A084B6901AE5927600D2D022 /* Products */,
@@ -188,7 +129,6 @@
 			children = (
 				A04649661AE60B1300D97A82 /* assets */,
 				A04649651AE60ABC00D97A82 /* classes */,
-				A0753CFD1AE9801800E145CF /* framework */,
 				A0DCF48E1AE8216A00259A8B /* model */,
 				A04649641AE60A9A00D97A82 /* view */,
 				A084B6921AE5927600D2D022 /* Supporting Files */,
@@ -472,11 +412,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Eduardo",
-					Santi,
-				);
 				INFOPLIST_FILE = "Eduardo Santi/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -488,11 +423,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Eduardo",
-					Santi,
-				);
 				INFOPLIST_FILE = "Eduardo Santi/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -22,15 +22,18 @@ class ESPortfolioViewController: UIViewController, UITableViewDataSource, UITabl
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //method call for general settings
         self.setBackgroundColor()
         self.setConfigurationsImage()
         self.setConfigurationsTitle()
     }
     
+    //set background color
     func setBackgroundColor(){
         self.view.backgroundColor = UIColor(red: 146/255, green: 43/255, blue: 218/255, alpha: 1.0)
     }
     
+    //set images configurations
     func setConfigurationsImage(){
         myPhoto.layer.borderWidth = 1.0
         myPhoto.layer.masksToBounds = false
@@ -39,11 +42,13 @@ class ESPortfolioViewController: UIViewController, UITableViewDataSource, UITabl
         myPhoto.clipsToBounds = true
     }
     
+    //set label title configurations
     func setConfigurationsTitle(){
         self.labelTitle.text = self.portfolio.title
         self.labelTitle.textColor = UIColor.whiteColor()
     }
 
+    //set all necessaries data for each cell
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
         
@@ -63,7 +68,6 @@ class ESPortfolioViewController: UIViewController, UITableViewDataSource, UITabl
         textDescription.scrollEnabled = false
         
         var textURL = cell.viewWithTag(30) as! UILabel
-        //textURL.text = self.portfolio.url[indexPath.row]
         var underlineAttriString = NSAttributedString(string: self.portfolio.url[indexPath.row], attributes: [NSUnderlineStyleAttributeName: NSUnderlineStyle.StyleSingle.rawValue])
         textURL.attributedText = underlineAttriString
         textURL.textColor = UIColor.whiteColor()
@@ -71,11 +75,12 @@ class ESPortfolioViewController: UIViewController, UITableViewDataSource, UITabl
         return cell;
     }
     
+    //return the numbers of itens in the array
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.portfolio.projects.count;
     }
     
-    
+    //return one action for each selected cell
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
         cell.backgroundColor = UIColor(red: 146/255, green: 43/255, blue: 218/255, alpha: 1.0)
@@ -107,6 +112,7 @@ class ESPortfolioViewController: UIViewController, UITableViewDataSource, UITabl
         self.tableViewPortfolio.reloadData()
     }
     
+    //start the pat's bay movie
     func playMovie(){
         let path = NSBundle.mainBundle().pathForResource("petsbay", ofType:"mov")
         let url = NSURL.fileURLWithPath(path!)
@@ -122,6 +128,7 @@ class ESPortfolioViewController: UIViewController, UITableViewDataSource, UITabl
         }
     }
     
+    //close the pat's bay movie
     func dismissPlayer(){
         moviePlayer.stop()
         moviePlayer.view.removeFromSuperview()
@@ -129,11 +136,13 @@ class ESPortfolioViewController: UIViewController, UITableViewDataSource, UITabl
         self.tabBarController?.tabBar.hidden = false
     }
     
+    //go to the website of selected cell
     func goWebsite(url: String){
         var link: NSURL = NSURL(string: url)!
         UIApplication.sharedApplication().openURL(link)
     }
     
+    //set table view configurations
     func setConfigurationsTableView(){
         self.tableViewPortfolio.backgroundColor = UIColor(red: 146/255, green: 43/255, blue: 218/255, alpha: 1.0)
         self.tableViewPortfolio.tableFooterView = UIView(frame: CGRectZero)

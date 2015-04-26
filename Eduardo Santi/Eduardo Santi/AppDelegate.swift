@@ -41,6 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     
+    //changes the color of the status bar 
     func setConfiturationStatusBar(){
         UIApplication.sharedApplication().statusBarStyle = .LightContent
     }

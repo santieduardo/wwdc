@@ -18,17 +18,19 @@ class ESTechnicalSkillViewController: UIViewController, UITableViewDataSource, U
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
+        //method call for general settings
         self.setBackgroundColor()
         self.setConfigurationsImage()
         self.setConfigurationsTitle()
     }
     
+    //set background color
     func setBackgroundColor(){
-        self.view.backgroundColor = UIColor(red: 216/255, green: 28/255, blue: 135/255, alpha: 1.0) //CORRIGIR COLOR AQUI, NA CELULA E NA TABLE VIEW !!!!
+        self.view.backgroundColor = UIColor(red: 216/255, green: 28/255, blue: 135/255, alpha: 1.0)
     }
     
+    //set images configurations
     func setConfigurationsImage(){
         myPhoto.layer.borderWidth = 1.0
         myPhoto.layer.masksToBounds = false
@@ -37,11 +39,13 @@ class ESTechnicalSkillViewController: UIViewController, UITableViewDataSource, U
         myPhoto.clipsToBounds = true
     }
     
+    //set label title configurations
     func setConfigurationsTitle(){
         self.labelTitle.text = self.technicalSkill.title
         self.labelTitle.textColor = UIColor.whiteColor()
     }
     
+    //set all necessaries data for each cell
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
         
@@ -55,15 +59,16 @@ class ESTechnicalSkillViewController: UIViewController, UITableViewDataSource, U
         return cell;
     }
     
+    //return the numbers of itens in the array
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.technicalSkill.experiences.count;
     }
     
+    //set table view configurations
     func setConfigurationsTableView(){
         self.tableViewSkills.backgroundColor = UIColor(red: 216/255, green: 28/255, blue: 135/255, alpha: 1.0)
         self.tableViewSkills.tableFooterView = UIView(frame: CGRectZero)
         self.tableViewSkills.separatorColor = UIColor.clearColor()
         self.tableViewSkills.allowsSelection = false
-        
     }
 }

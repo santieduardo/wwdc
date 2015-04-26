@@ -18,15 +18,18 @@ class ESExperienceViewController: UIViewController, UITableViewDataSource, UITab
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //method call for general settings
         self.setBackgroundColor()
         self.setConfigurationsImage()
         self.setConfigurationsTitle()
     }
     
+    //set background color
     func setBackgroundColor(){
         self.view.backgroundColor = UIColor(red: 24/255, green: 131/255, blue: 252/255, alpha: 1.0)
     }
     
+    //set images configurations
     func setConfigurationsImage(){
         myPhoto.layer.borderWidth = 1.0
         myPhoto.layer.masksToBounds = false
@@ -35,11 +38,13 @@ class ESExperienceViewController: UIViewController, UITableViewDataSource, UITab
         myPhoto.clipsToBounds = true
     }
     
+    //set label title configurations
     func setConfigurationsTitle(){
         self.labelTitle.text = self.experience.title
         self.labelTitle.textColor = UIColor.whiteColor()
     }
     
+    //set table view configurations
     func setConfigurationsTableView(){
         self.tableViewExperience.backgroundColor = UIColor(red: 24/255, green: 131/255, blue: 252/255, alpha: 1.0)
         self.tableViewExperience.tableFooterView = UIView(frame: CGRectZero)
@@ -47,6 +52,7 @@ class ESExperienceViewController: UIViewController, UITableViewDataSource, UITab
         self.tableViewExperience.allowsSelection = false
     }
     
+    //set all necessaries data for each cell
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
         
@@ -72,6 +78,7 @@ class ESExperienceViewController: UIViewController, UITableViewDataSource, UITab
         return cell;
     }
     
+    //return the numbers of itens in the array
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.experience.jobs.count
     }

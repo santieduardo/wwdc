@@ -1,7 +1,7 @@
 //
 //  ESAbout.swift
 //  Eduardo Santi
-//
+//  Contact: eduardoivaniskisanti@yahoo.com.br
 //  Created by Eduardo Santi on 22/04/15.
 //  Copyright (c) 2015 Eduardo Santi. All rights reserved.
 //

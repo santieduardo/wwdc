@@ -1,7 +1,7 @@
 //
 //  ESPortfolioViewController.swift
 //  Eduardo Santi
-//
+//  Contact: eduardoivaniskisanti@yahoo.com.br
 //  Created by Eduardo Santi on 21/04/15.
 //  Copyright (c) 2015 Eduardo Santi. All rights reserved.
 //
@@ -97,10 +97,14 @@ class ESPortfolioViewController: UIViewController, UITableViewDataSource, UITabl
             textDescription.scrollEnabled = false
             
             var textURL = cell.viewWithTag(30) as! UILabel
+            textURL.backgroundColor = UIColor(red: 146/255, green: 43/255, blue: 218/255, alpha: 1.0)
             textURL.text = self.portfolio.url[indexPath.row]
             textURL.textColor = UIColor.whiteColor()
+            
+            self.goWebsite(self.portfolio.url[indexPath.row])
         }
         
+        self.tableViewPortfolio.reloadData()
     }
     
     func playMovie(){
@@ -125,10 +129,14 @@ class ESPortfolioViewController: UIViewController, UITableViewDataSource, UITabl
         self.tabBarController?.tabBar.hidden = false
     }
     
+    func goWebsite(url: String){
+        var link: NSURL = NSURL(string: url)!
+        UIApplication.sharedApplication().openURL(link)
+    }
+    
     func setConfigurationsTableView(){
         self.tableViewPortfolio.backgroundColor = UIColor(red: 146/255, green: 43/255, blue: 218/255, alpha: 1.0)
         self.tableViewPortfolio.tableFooterView = UIView(frame: CGRectZero)
         self.tableViewPortfolio.separatorColor = UIColor.clearColor()
-        //self.tableViewPortfolio.allowsSelection = false
     }
 }

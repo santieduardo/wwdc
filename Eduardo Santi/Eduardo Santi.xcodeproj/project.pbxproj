@@ -20,6 +20,7 @@
 		A084B6AB1AE5927700D2D022 /* Eduardo_SantiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A084B6AA1AE5927700D2D022 /* Eduardo_SantiTests.swift */; };
 		A087AF9E1AE74452009538B3 /* ESPortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A087AF9D1AE74452009538B3 /* ESPortfolioViewController.swift */; };
 		A0B6911A1AE7233A006F3F1B /* ESExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B691191AE7233A006F3F1B /* ESExperienceViewController.swift */; };
+		A0C16A511AEC3F4E00990377 /* ESContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C16A501AEC3F4E00990377 /* ESContact.swift */; };
 		A0DCF4901AE8219400259A8B /* ESAboutMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DCF48F1AE8219400259A8B /* ESAboutMe.swift */; };
 		A0DCF4921AE824BA00259A8B /* ESExperience.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DCF4911AE824BA00259A8B /* ESExperience.swift */; };
 		A0DCF4941AE8269500259A8B /* ESPortfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DCF4931AE8269500259A8B /* ESPortfolio.swift */; };
@@ -53,6 +54,7 @@
 		A084B6AA1AE5927700D2D022 /* Eduardo_SantiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eduardo_SantiTests.swift; sourceTree = "<group>"; };
 		A087AF9D1AE74452009538B3 /* ESPortfolioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESPortfolioViewController.swift; sourceTree = "<group>"; };
 		A0B691191AE7233A006F3F1B /* ESExperienceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESExperienceViewController.swift; sourceTree = "<group>"; };
+		A0C16A501AEC3F4E00990377 /* ESContact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESContact.swift; sourceTree = "<group>"; };
 		A0DCF48F1AE8219400259A8B /* ESAboutMe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESAboutMe.swift; sourceTree = "<group>"; };
 		A0DCF4911AE824BA00259A8B /* ESExperience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESExperience.swift; sourceTree = "<group>"; };
 		A0DCF4931AE8269500259A8B /* ESPortfolio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESPortfolio.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				A0DCF48F1AE8219400259A8B /* ESAboutMe.swift */,
+				A0C16A501AEC3F4E00990377 /* ESContact.swift */,
 				A0DCF4911AE824BA00259A8B /* ESExperience.swift */,
 				A0DCF4931AE8269500259A8B /* ESPortfolio.swift */,
 				A04D03BC1AE87FCB00A28276 /* ESTechnicalSkill.swift */,
@@ -287,6 +290,7 @@
 				A0B6911A1AE7233A006F3F1B /* ESExperienceViewController.swift in Sources */,
 				A084B6951AE5927600D2D022 /* AppDelegate.swift in Sources */,
 				A04D03BD1AE87FCB00A28276 /* ESTechnicalSkill.swift in Sources */,
+				A0C16A511AEC3F4E00990377 /* ESContact.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

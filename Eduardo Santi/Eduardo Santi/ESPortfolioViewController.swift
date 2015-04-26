@@ -21,7 +21,6 @@ class ESPortfolioViewController: UIViewController, UITableViewDataSource, UITabl
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
         self.setBackgroundColor()
         self.setConfigurationsImage()
@@ -29,7 +28,7 @@ class ESPortfolioViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     func setBackgroundColor(){
-        self.view.backgroundColor = UIColor(red: 109/255, green: 2/255, blue: 175/255, alpha: 1.0)
+        self.view.backgroundColor = UIColor(red: 146/255, green: 43/255, blue: 218/255, alpha: 1.0)
     }
     
     func setConfigurationsImage(){
@@ -48,7 +47,7 @@ class ESPortfolioViewController: UIViewController, UITableViewDataSource, UITabl
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
         
-        cell.backgroundColor = UIColor(red: 109/255, green: 2/255, blue: 175/255, alpha: 1.0)
+        cell.backgroundColor = UIColor(red: 146/255, green: 43/255, blue: 218/255, alpha: 1.0)
         self.setConfigurationsTableView()
         
         var textProject = cell.viewWithTag(10) as! UILabel
@@ -58,13 +57,15 @@ class ESPortfolioViewController: UIViewController, UITableViewDataSource, UITabl
         var textDescription = cell.viewWithTag(20) as! UITextView
         textDescription.text = self.portfolio.descriptions[indexPath.row]
         textDescription.textColor = UIColor.whiteColor()
-        textDescription.backgroundColor = UIColor(red: 109/255, green: 2/255, blue: 175/255, alpha: 1.0)
+        textDescription.backgroundColor = UIColor(red: 146/255, green: 43/255, blue: 218/255, alpha: 1.0)
         textDescription.editable = false
         textDescription.selectable = false
         textDescription.scrollEnabled = false
         
         var textURL = cell.viewWithTag(30) as! UILabel
-        textURL.text = self.portfolio.url[indexPath.row]
+        //textURL.text = self.portfolio.url[indexPath.row]
+        var underlineAttriString = NSAttributedString(string: self.portfolio.url[indexPath.row], attributes: [NSUnderlineStyleAttributeName: NSUnderlineStyle.StyleSingle.rawValue])
+        textURL.attributedText = underlineAttriString
         textURL.textColor = UIColor.whiteColor()
         
         return cell;
@@ -77,7 +78,7 @@ class ESPortfolioViewController: UIViewController, UITableViewDataSource, UITabl
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
-        cell.backgroundColor = UIColor(red: 109/255, green: 2/255, blue: 175/255, alpha: 1.0)
+        cell.backgroundColor = UIColor(red: 146/255, green: 43/255, blue: 218/255, alpha: 1.0)
         self.setConfigurationsTableView()
         
         if indexPath.row == 0{
@@ -90,7 +91,7 @@ class ESPortfolioViewController: UIViewController, UITableViewDataSource, UITabl
             var textDescription = cell.viewWithTag(20) as! UITextView
             textDescription.text = self.portfolio.descriptions[indexPath.row]
             textDescription.textColor = UIColor.whiteColor()
-            textDescription.backgroundColor = UIColor(red: 109/255, green: 2/255, blue: 175/255, alpha: 1.0)
+            textDescription.backgroundColor = UIColor(red: 146/255, green: 43/255, blue: 218/255, alpha: 1.0)
             textDescription.editable = false
             textDescription.selectable = false
             textDescription.scrollEnabled = false
@@ -125,7 +126,7 @@ class ESPortfolioViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     func setConfigurationsTableView(){
-        self.tableViewPortfolio.backgroundColor = UIColor(red: 109/255, green: 2/255, blue: 175/255, alpha: 1.0)
+        self.tableViewPortfolio.backgroundColor = UIColor(red: 146/255, green: 43/255, blue: 218/255, alpha: 1.0)
         self.tableViewPortfolio.tableFooterView = UIView(frame: CGRectZero)
         self.tableViewPortfolio.separatorColor = UIColor.clearColor()
         //self.tableViewPortfolio.allowsSelection = false

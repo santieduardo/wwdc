@@ -11,8 +11,8 @@ import UIKit
 class ESExperience: NSObject {
     
     var title = "Experience"
-    var works = ["iOS Developer Student - BEPiD", "Web Developer - Agência Conjunto"]
+    var jobs = ["iOS Developer Student @ BEPiD", "Web Developer @ Agência Conjunto"]
     var dates = ["Feb 2015 - Present", "Oct 2014 - Feb 2015"]
-    var descriptions = ["Um programa único e inovador para qualificar estudantes de graduação. A abordagem de aprendizagem é baseada em desafios, onde os estudantes interagem com outros alunos e professores para superar os desafios", "Criação de websites para campanhas institucionais, promocionais, comerciais e blogs para divulgação de notícias e eventos dos clientes"]
+    var descriptions = ["A unique and innovative program to qualify undergraduate students. The learning approach is based on challenges, where students interact with other students and teachers to overcome the challenges.", "Creating websites for promotional, commercial and  institutional campaigns and blogs to disseminate news and customer events."]
    
 }

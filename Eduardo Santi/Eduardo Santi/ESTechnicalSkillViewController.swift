@@ -26,7 +26,7 @@ class ESTechnicalSkillViewController: UIViewController, UITableViewDataSource, U
     }
     
     func setBackgroundColor(){
-        self.view.backgroundColor = UIColor(red: 206/255, green: 31/255, blue: 110/255, alpha: 1.0) //CORRIGIR COLOR AQUI, NA CELULA E NA TABLE VIEW !!!!
+        self.view.backgroundColor = UIColor(red: 216/255, green: 28/255, blue: 135/255, alpha: 1.0) //CORRIGIR COLOR AQUI, NA CELULA E NA TABLE VIEW !!!!
     }
     
     func setConfigurationsImage(){
@@ -45,7 +45,7 @@ class ESTechnicalSkillViewController: UIViewController, UITableViewDataSource, U
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
         
-        cell.backgroundColor = UIColor(red: 206/255, green: 31/255, blue: 110/255, alpha: 1.0)
+        cell.backgroundColor = UIColor(red: 216/255, green: 28/255, blue: 135/255, alpha: 1.0)
         self.setConfigurationsTableView()
         
         var textExperiences = cell.viewWithTag(10) as! UILabel
@@ -60,7 +60,7 @@ class ESTechnicalSkillViewController: UIViewController, UITableViewDataSource, U
     }
     
     func setConfigurationsTableView(){
-        self.tableViewSkills.backgroundColor = UIColor(red: 206/255, green: 31/255, blue: 110/255, alpha: 1.0)
+        self.tableViewSkills.backgroundColor = UIColor(red: 216/255, green: 28/255, blue: 135/255, alpha: 1.0)
         self.tableViewSkills.tableFooterView = UIView(frame: CGRectZero)
         self.tableViewSkills.separatorColor = UIColor.clearColor()
         self.tableViewSkills.allowsSelection = false

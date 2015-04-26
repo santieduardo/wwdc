@@ -19,7 +19,6 @@ class ESAboutMeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
         self.setBackgroundColor()
         self.setConfigurationsImage()
@@ -30,7 +29,7 @@ class ESAboutMeViewController: UIViewController {
     }
     
     func setBackgroundColor(){
-        self.view.backgroundColor = UIColor(red: 33/255, green: 157/255, blue: 182/255, alpha: 1.0)
+        self.view.backgroundColor = UIColor(red: 23/255, green: 177/255, blue: 213/255, alpha: 1.0)
     }
     
     func setConfigurationsImage(){
@@ -62,5 +61,6 @@ class ESAboutMeViewController: UIViewController {
         self.textViewMyInterests.textColor = UIColor.whiteColor()
         self.textViewMyInterests.selectable = false
         self.textViewMyInterests.text = self.aboutMe.interests
+        self.textViewMyInterests.scrollEnabled = false
     }
 }

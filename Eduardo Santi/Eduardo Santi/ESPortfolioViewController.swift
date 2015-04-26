@@ -131,5 +131,4 @@ class ESPortfolioViewController: UIViewController, UITableViewDataSource, UITabl
         self.tableViewPortfolio.separatorColor = UIColor.clearColor()
         //self.tableViewPortfolio.allowsSelection = false
     }
-
 }
